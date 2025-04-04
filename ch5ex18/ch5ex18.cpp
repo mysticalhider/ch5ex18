@@ -50,7 +50,7 @@ int main()
 		handle = getfilehandle(fileName);
 		if (!handle == NULL)
 		{
-			while (handle >> value);
+			while (handle >> value)
 			{
 				displayline(value, year);
 				year += 20;
@@ -89,6 +89,7 @@ fstream getfilehandle(string fileName)
 void displayline(double pop, int year)
 {
 	int thousands = pop / 1000;
+	cout << year;
 	for (int count = 0; count < thousands; count++)
 		cout << "*";
 	cout << endl;
